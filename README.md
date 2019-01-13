@@ -1,1 +1,1 @@
-# practical-angular
+# Angular tutorial
