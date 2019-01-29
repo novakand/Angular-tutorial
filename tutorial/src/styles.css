@@ -1,2 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~highlight.js/styles/github.css';
+
+.container{
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+  }
+  
+  tr.mat-footer-row {
+    font-weight: bold;
+  }
+
+  table {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table.striped tr {
+    border-bottom: none;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td, th {
+    padding: 15px 10px;
+}
+td, th {
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+thead {
+    color: rgba(0,0,0,0.6);
+}
+
+.mat-expansion-panel {
+    margin: 5px !important;
+}
+
+tr {
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+pre {
+    background: rgba(0,0,0,.01);
+    border: .5px solid rgba(0,0,0,.03);
+}
+pre {
+    border-radius: 5px;
+    display: block;
+    margin: 16px auto;
+    overflow-x: auto;
+    padding: 20px;
+    white-space: pre-wrap;
+}
+
+pre {
+    font-size: 14px;
+}
+code, pre {
+    font-family: 'Roboto Mono',monospace;
+}
+
+@import '~@angular/material/theming';

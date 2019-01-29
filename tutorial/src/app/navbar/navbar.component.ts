@@ -7,6 +7,8 @@ import {MediaMatcher} from '@angular/cdk/layout';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+
+  shouldRun = true
   
   ngOnInit(): void {
    

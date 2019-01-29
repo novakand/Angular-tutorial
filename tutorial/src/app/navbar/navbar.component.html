@@ -1,43 +1,18 @@
+<div class="example-container" >
 <mat-toolbar color="primary">
-  <span class="fill-remaining-space">
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu" [overlapTrigger]="false">
-      <button mat-menu-item>
-        <mat-icon>home</mat-icon>
-        <span>Home</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>people_outline</mat-icon>
-        <span>Connecting</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>videocam</mat-icon>
-        <span>Let's talk</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>exit_to_app</mat-icon>
-        <span>Logout</span>
-      </button>
-    </mat-menu>
-  </span>
   <span class="fill-remaining-space"> Angular Tutorial</span>
   
 </mat-toolbar>
-
-<mat-sidenav-container class="example-container" *ngIf="shouldRun">
-  <mat-sidenav #sidenav [mode]="mode.value">
-    <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
-    <p>
+<mat-sidenav-container class="example-sidenav-container">
+  <mat-sidenav opened mode="side">
     
-    </p>
+    <mat-nav-list>
+      <a mat-list-item routerLink='/directives' routerLinkActive="active-list-item">Привязки данных</a>
+      <a mat-list-item routerLink='/directives-type' routerLinkActive="active-list-item">Виды привязок данных</a>
+    </mat-nav-list>
   </mat-sidenav>
-
-  <mat-sidenav-content>
-    <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
-    <p>
-    
-    </p>
-  </mat-sidenav-content>
+  <mat-sidenav mode="side" position="end">End content</mat-sidenav>
+  <router-outlet></router-outlet>
 </mat-sidenav-container>
+
+</div>

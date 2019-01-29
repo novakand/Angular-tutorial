@@ -1,0 +1,141 @@
+<div class="container">
+  <mat-tab-group>
+    <mat-tab label="Описание">
+
+      <h3 id="expansion-panel-content" class="docs-header-link">
+        <span header-link="expansion-panel-content"></span>
+        Привязки данных
+      </h3>
+      <mat-expansion-panel expanded>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Что это такое?
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          Привязки данных - выражения которые встраиваются в шаблоны и вычисляются для генерирования динамического
+          контента в документах HTML
+        </p>
+
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Для чего они нужны ?
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          Привязки данных создают связь между элементами HTML
+          в документах HTML и файлами шаблонов с данными и кодом
+          в приложении
+        </p>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Как они используются?
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          Привязки данных применяются как атрибуты элементов HTML
+          или специальные последовательности символов в строках
+        </p>
+      </mat-expansion-panel>
+
+      <h3 id="expansion-panel-content" class="docs-header-link">
+        <span header-link="expansion-panel-content"></span>
+        Основные встроенные директивы
+      </h3>
+      <div class="example-container">
+        <table class="striped">
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ngClass</td>
+              <td>Директива используется для назначения классов управляющим
+                элементам </td>
+            </tr>
+            <tr>
+              <td>ngStyle</td>
+              <td>Директива используется для назначения отдельных стилей </td>
+            </tr>
+
+            <tr>
+              <td>ngIf</td>
+              <td>Директива вставляет контент в документ HTML при условии, что
+                результат вычисления заданного выражения равен true </td>
+            </tr>
+
+            <tr>
+              <td>ngFor</td>
+              <td>Директива вставляет контент в документ HTML для каждого
+                элемента в источнике данных </td>
+            </tr>
+
+            <tr>
+              <td>ngSwitch ngSwitchCase
+                ngSwitchDefault</td>
+              <td>Директивы используются для выбора блоков контента, вставляемых в документ HTML, в зависимости от
+                значения выражения </td>
+            </tr>
+
+            <tr>
+              <td>ngTemplateOutlet</td>
+              <td>Директива используется для повторения блока контента </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </mat-tab>
+    <mat-tab label="Пример">
+
+      <mat-expansion-panel expanded>
+        <mat-expansion-panel-header>
+          ngClass
+        </mat-expansion-panel-header>
+        <pre><code [textContent]="ngClass"></code></pre>
+        <mat-action-row>
+          <a target="_blank" mat-button href='https://stackblitz.com/edit/angular-ngclass-novakand?file=src%2Fapp%2Fapp.component.html'>Stackblitz</a>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel expanded>
+        <mat-expansion-panel-header>
+          ngStyle
+        </mat-expansion-panel-header>
+        <pre><code [textContent]="ngStyle"></code></pre>
+        <mat-action-row>
+          <a target="_blank" mat-button href='https://stackblitz.com/edit/angular-ngstyle-novakand?file=src/app/app.component.html'>Stackblitz</a>
+        </mat-action-row>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            ngIf
+          </mat-expansion-panel-header>
+          <pre><code [textContent]="ngIf"></code></pre>
+          <mat-action-row>
+            <a target="_blank" mat-button href='https://stackblitz.com/edit/angular-ngif-novakand?file=src/app/app.component.html'>Stackblitz</a>
+          </mat-action-row>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              ngFor
+            </mat-expansion-panel-header>
+            <pre><code [textContent]="ngFor"></code></pre>
+            <mat-action-row>
+              <a target="_blank" mat-button href='https://stackblitz.com/edit/angular-ngfor-novakand?file=src/app/app.component.html'>Stackblitz</a>
+            </mat-action-row>
+          </mat-expansion-panel>
+
+    </mat-tab>
+  </mat-tab-group>
+</div>

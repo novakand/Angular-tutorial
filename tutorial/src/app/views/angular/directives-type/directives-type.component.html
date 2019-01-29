@@ -1,0 +1,87 @@
+<div class="container">
+    <mat-tab-group>
+      <mat-tab label="Описание">
+        <h3 id="expansion-panel-content" class="docs-header-link">
+          <span header-link="expansion-panel-content"></span>
+          Виды привязок данных
+        </h3>
+        <div class="example-container">
+          <table class="striped">
+            <thead>
+              <tr>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>[цель]="выражение"</td>
+                <td>Квадратные скобки обозначают одностороннюю привязку данных, в которой данные передаются от выражения к цели </td>
+              </tr>
+              <tr>
+                <td>выражение </td>
+                <td>Привязка со строковой интерполяцией </td>
+              </tr>
+  
+              <tr>
+                <td>(цель) ="выражение" </td>
+                <td>Круглые скобки обозначают одностороннюю привязку данных,
+                    в которой данные передаются от цели к приемнику, заданному
+                    выражением </td>
+              </tr>
+  
+              <tr>
+                <td>[(цель)] ="выражение" </td>
+                <td>Такая комбинация скобок обозначает двустороннюю привязку,
+                    в которой данные передаются в обоих направлениях между
+                    целью и приемником, заданным выражением  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </mat-tab>
+      <mat-tab label="Пример">
+  
+        <mat-expansion-panel expanded>
+          <mat-expansion-panel-header>
+             От выражения к цели/ Односторонняя привязка
+          </mat-expansion-panel-header>
+          <pre><code [textContent]="expressionGoal"></code></pre>
+          <mat-action-row>
+            <a target="_blank" mat-button href='https://stackblitz.com/edit/angular-ngclass-novakand?file=src%2Fapp%2Fapp.component.html'>Stackblitz</a>
+          </mat-action-row>
+        </mat-expansion-panel>
+  
+        <mat-expansion-panel expanded>
+          <mat-expansion-panel-header>
+             Выражение/ Привязка со строковой интерполяцией
+          </mat-expansion-panel-header>
+          <pre><code [textContent]="expression"></code></pre>
+          <mat-action-row>
+            <a target="_blank" mat-button href='https://stackblitz.com/edit/angular-ngstyle-novakand?file=src/app/app.component.html'>Stackblitz</a>
+          </mat-action-row>
+        </mat-expansion-panel>
+  
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+               От цели к выражению/ Односторонняя привязка
+            </mat-expansion-panel-header>
+            <pre><code [textContent]="targetExpression"></code></pre>
+            <mat-action-row>
+              <a target="_blank" mat-button href='https://stackblitz.com/edit/angular-ngif-novakand?file=src/app/app.component.html'>Stackblitz</a>
+            </mat-action-row>
+          </mat-expansion-panel>
+  
+          <mat-expansion-panel>
+              <mat-expansion-panel-header>
+              Двухсторонняя привязка
+              </mat-expansion-panel-header>
+              <pre><code [textContent]="doubleTargetExpression"></code></pre>
+              <mat-action-row>
+                <a target="_blank" mat-button href='https://stackblitz.com/edit/angular-ngmodel-novakand'>Stackblitz</a>
+              </mat-action-row>
+            </mat-expansion-panel>
+  
+      </mat-tab>
+    </mat-tab-group>
+  </div>
